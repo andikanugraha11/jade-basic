@@ -1,0 +1,46 @@
+doctype	html
+html
+	head
+		title Home
+		link(rel='stylesheet', href='/css/costum.css')
+	body
+		div
+			h1 Coba Jade
+			p Hello World
+
+			img(src='/dika.jpg')
+			br
+			input(type="password" name="dika")
+			p#dika p dengan id dika
+			p.dika p dengan class dika
+
+			p.dika#dika.classlain multi class
+
+			p
+				| hello
+				| ini 
+				| p dengan blok
+
+			//komentar 1 baris
+
+			//kometra
+				dubaris
+
+			p hai
+
+			.langsung
+				.colom
+					p ini div langsung class
+
+			div: p: span: ini langusng
+
+			//Assigment
+			- var nama = 'Andika nuhrahahahaha'
+			p=nama
+
+			each item in ['satu','dua','tiga']
+				li= item
+
+			for item, i in ['satu','dua','tiga']
+				li= item
+				li= i	
